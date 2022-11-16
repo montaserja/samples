@@ -13,7 +13,9 @@ class CartModel extends ChangeNotifier {
   final List<int> _itemIds = [];
 
   /// The current catalog. Used to construct items from numeric ids.
-  CatalogModel get catalog => _catalog;
+  CatalogModel get catalog {
+    return _catalog;
+  } 
 
   set catalog(CatalogModel newCatalog) {
     _catalog = newCatalog;
@@ -24,7 +26,9 @@ class CartModel extends ChangeNotifier {
   }
 
   /// List of items in the cart.
-  List<Item> get items => _itemIds.map((id) => _catalog.getById(id)).toList();
+  List<Item> get items {
+    return _itemIds.map((id) => _catalog.getById(id)).toList();
+  }
 
   /// The current total price of all items.
   int get totalPrice =>

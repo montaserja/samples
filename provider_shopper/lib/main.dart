@@ -15,7 +15,17 @@ import 'package:provider_shopper/screens/catalog.dart';
 import 'package:provider_shopper/screens/login.dart';
 import 'package:window_size/window_size.dart';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+
+
+
 void main() {
+  //await
+   Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+  );
   setupWindow();
   runApp(const MyApp());
 }
@@ -49,7 +59,7 @@ class MyApp extends StatelessWidget {
       providers: [
         // In this sample app, CatalogModel never changes, so a simple Provider
         // is sufficient.
-        Provider(create: (context) => CatalogModel()),
+        Provider(create: (context) { return CatalogModel();}),
         // CartModel is implemented as a ChangeNotifier, which calls for the use
         // of ChangeNotifierProvider. Moreover, CartModel depends
         // on CatalogModel, so a ProxyProvider is needed.

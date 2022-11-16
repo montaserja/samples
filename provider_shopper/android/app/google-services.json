@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948116285912",
+    "project_id": "shopper-57485",
+    "storage_bucket": "shopper-57485.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948116285912:android:79bd8927cb9bd21cf06aad",
+        "android_client_info": {
+          "package_name": "dev.flutter.provider_shopper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948116285912-vl1q446fqqo17v85k0g4ot7lmvsving2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0I4F28G0tZdD5FbxnTlPxrITbLtfOovM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948116285912-vl1q446fqqo17v85k0g4ot7lmvsving2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

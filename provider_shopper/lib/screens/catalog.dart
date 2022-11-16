@@ -77,6 +77,7 @@ class _MyAppBar extends StatelessWidget {
     return SliverAppBar(
       title: Text('Catalog', style: Theme.of(context).textTheme.displayLarge),
       floating: true,
+      backgroundColor: Colors.blueAccent,
       actions: [
         IconButton(
           icon: const Icon(Icons.shopping_cart),
